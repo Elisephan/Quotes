@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Quotes</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor="let quote of quotes; let i = index">
+                <div>
+                    <h6 appHightlight *ngIf="HighestUpvote() === quote.like && quote.like > 0">
+                        {{ quote.name }} due on {{ quote.completeDate | date | uppercase }}
+                    </h6>
+                    <h6 *ngIf="HighestUpvote() !== quote.like || quote.like === 0">
+                        {{ quote.name }}
+                    </h6>
+                    <button (click)="toggleDetails(i)" class="btn btn-primary">
+            Toggle Details
+          </button>
+                </div>
+
+                <div *ngIf="quote.showAuthor">
+                    <app-quote-detail [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        </div>
+    </div>
+</div>
