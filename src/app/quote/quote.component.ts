@@ -43,7 +43,7 @@ export class QuoteComponent implements OnInit {
     new Quote(
       5,
       'If you are born poor it is not your mistake but if you die poor it is your mistake',
-      'Bill Gates',
+      'Gates',
       0,
       0,
       new Date(2019, 2, 14)
