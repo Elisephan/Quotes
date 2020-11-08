@@ -10,54 +10,53 @@ export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
       1,
-      'Love For All, Hatred For None.',
-      ' Amy Poehler',
+      'We cannot turn the clock back nor can we undo the harm caused..',
+      ' Paul Kagame',
       0,
       0,
       new Date(2020, 3, 140)
     ),
     new Quote(
       2,
-      'Every moment is a fresh beginning',
-      'T.S Eliot',
+      'It always seems impossible until its done',
+      'Nelson Mandela',
       0,
       0,
       new Date(2019, 6, 9)
     ),
     new Quote(
       3,
-      'Die with memories, not dreams',
-      'Unknown',
+      'Change will never come if we wait for some other person or other time',
+      'Brack Obama',
       0,
       0,
       new Date(2022, 1, 12)
     ),
     new Quote(
       4,
-      'Aspire to inspire before we expire',
-      'Unknown',
+      'Life is not fair,get used to it',
+      'Bill Gates',
       0,
       0,
       new Date(2019, 0, 18)
     ),
     new Quote(
       5,
-      'Everything you can imagine is real',
-      'Pablo Picasso',
+      'If you are born poor it is not your mistake but if you die poor it is your mistake',
+      'Bill Gates',
       0,
       0,
       new Date(2019, 2, 14)
     ),
     new Quote(
       6,
-      'Whatever you do, do it well',
-      'Walt Disney',
+      'Stay hungry,stay foolish',
+      'Steve Jobs',
       0,
       0,
       new Date(2030, 3, 14)
     ),
   ];
-
   toggleDetails(index) {
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }

@@ -1,6 +1,32 @@
 # Quotes
 
+## Author
+
+[Elisephan Ntakirutimana](https://github.com/Elisephan/Quotes.git)
+
+## Project Description
+
+This is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.The project contain a form component that has input sections for the quote, the author, and the person who submitted the quote.It also has a component to display the quote and a component to display quote details. For example, the quote details has the author of the quote and the votes it has.
+
+## Project setup instructions
+
+Here are some prerequisites needed
+
+- Node.js
+- Angular-Js framework
+- Typescript
+- Terminal
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+
+## Technologies Used
+
+- HTML
+- CSS
+- Angular
+- Bootstrap
+- Angular CLI
+- Type Script
 
 ## Development server
 
@@ -24,4 +50,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For more information on this project,don't hesitate to contact me on elise.ntakirutimana@gmail.com
+
+## License information
+
+This project is licensed under the MIT Licence.Copyright(c) 2020
