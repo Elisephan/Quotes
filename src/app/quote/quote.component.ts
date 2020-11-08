@@ -27,7 +27,7 @@ export class QuoteComponent implements OnInit {
     new Quote(
       3,
       'Change will never come if we wait for some other person or other time',
-      ' Obama',
+      ' Barack Obama',
       0,
       0,
       new Date(2022, 1, 12)
