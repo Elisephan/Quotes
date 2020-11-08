@@ -1,13 +1,12 @@
 <div class="container">
-    <h1>Inspirational quotes of 20th century</h1>
+    <h1 class="jumbotron">Inspirational quotes of 20th century</h1>
     <hr />
 
-    <div class="row">
-        <div class="col-md-6">
-            <div *ngFor="let quote of quotes; let i = index">
+    <div class=" row ">
+        <div class="col-md-6 ">
+            <div *ngFor="let quote of quotes; let i=i ndex ">
                 <div>
-                    <h6 appHightlight *ngIf="HighestUpvote() === quote.like && quote.like > 0">
-                        {{ quote.name }} due on {{ quote.completeDate | date | uppercase }}
+                    <h6 appHightlight *ngIf="HighestUpvote()===q uote.like && quote.like> 0"> {{ quote.name }} due on {{ quote.completeDate | date | uppercase }}
                     </h6>
                     <h6 *ngIf="HighestUpvote() !== quote.like || quote.like === 0">
                         {{ quote.name }}
